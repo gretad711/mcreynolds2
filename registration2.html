@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>McReynolds Family</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Jacques+Francois+Shadow|Rubik+Mono+One|Russo+One|Vast+Shadow&display=swap" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/registration2.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript" src="./resources/js/main2.js"></script>
+  </head>
+  <body class="colorful">
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <img class="navbar-left " src="resources/images/logofinalblack.jpg" alt="McReynolds' Logo">
+            <h3 class="navbar-left">McReynolds</h3>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index2.html">Home</a></li>
+              <li><a href="history2.html">History</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Things to Do</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <section class="banner" role="banner">
+          <h1>McReynolds Family Reunion<br>2021</h1>
+          <h3>Chicago, Illinois</h3>
+        </section>
+
+        <!--- Registration -->
+        <form class="register" action="index.html" method="post">
+          <label class="name" for='name'>Name:</label>
+          <br>
+          <input type="text" name="name" id="name">
+          <br>
+          <br>
+          <br>
+          <label for="attendees">Number of Attendees:</label>
+          <br>
+          <label class="numbers" for="adults">Adults:</label>
+          <br class="cell-view">
+          <input class="indent" type="number" name="adults" value="1" step="1" min="1">
+          <br class="cell-view">
+          <label class="numbers" for="children">Children:</label>
+          <br class="cell-view">
+          <input class="indent" type="number" name="chilren" value="0" step="1" min="0">
+          <br>
+          <br>
+          <br>
+          <label for="T-Shirts">T-Shirts:</label>
+          <br>
+          <label class="numbers" for="tshirts">Number of T-Shirts:</label>
+          <br class="cell-view">
+          <input class="indent" type="number" name="tshirts" value="0" step="1" min="0">
+          <br class="cell-view">
+          <label class="numbers" for="size">Size:</label>
+          <br class="cell-view">
+              <select name="size" id="size" class="indent">
+                <option value="uni_small">Unisex: Small</option>
+        				<option value="uni_medium">Unisex: Medium</option>
+        				<option value="uni_large">Unisex: Large</option>
+                <option value="uni_xlarge">Unisex: X-Large</option>
+                <option value="uni_xxlarge">Unisex: XX-Large</option>
+                <option value="uni_xxxlarge">Unisex: XXX-Large</option>
+                <option value="missy_small">Missy: Small</option>
+                <option value="missy_medium">Missy: Medium</option>
+        				<option value="missy_large">Missy: Large</option>
+                <option value="missy_xlarge">Missy: X-Large</option>
+                <option value="missy_xxlarge">Missy: XX-Large</option>
+                <option value="missy_xxxlarge">Missy: XXX-Large</option>
+              </select>
+              <br>
+              <br>
+              <br>
+              <label for="family">Updated List of Family Members:</label>
+              <br>
+              <textarea placeholder="Enter the members of your family..."name="family" id="family" rows="8" cols="80"></textarea>
+              <br>
+              <br>
+              <br>
+              <input id="submit-btn" type="submit" value="Submit">
+        </form>
+
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="social-media" role="link">
+          <span>Share on social media: </span>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </footer>
+
+    </body>
+  </html>
